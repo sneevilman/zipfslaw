@@ -21,34 +21,49 @@ bool Restart();
 int main() {
     //Declare and process variables
     bool restart;
-    short cnt[10]={0};
-    string word[10];
+    long q(64000);
+    string word[q],
+            place[q];
     bool check=false;
     
     //Process/Calculations Here
     do {
+        q=0;
         ifstream in;
         in.open("zipf.txt");
-        
-            for(short i=0;i<10;i++){
-                in>>word[i];
-                cout<<i<<word[i]<<endl;
+        while(in){
+            in>>word[q];
+            cout<<q<<": "<<word[q]<<endl;
+            if(word[q]==""){
+                cout<<"it worked"<<endl;
+                in.close();
             }
-        short n=0;
-        for(short i=0;i<10;i++){
-            for(short l=0;l<10;l++){
-                if(word[i]==word[l-10]){
-                    check=false;
-                }else check=true;
-                if(check==true){
-                    if(word[i]==word[l]){
-                        cnt[n]++;
-                    }else n++;
-                }
-            }   
+            q++;
         }
-        for (short i=0;i<10;i++){
-            cout<<cnt[i]<<endl;
+        short n=0;
+        short cnt[q]={0};
+            
+            for(short i=0;i<q;i++){
+                check=true;
+                if(i>0){
+                    for(short l=0;l<i;l++){
+                        if(word[i]==word[l]){
+                            check=false;
+                        }
+                    }
+                }
+                if(check==true){
+                    for(short l=0;l<q;l++){
+                        if(word[i]==word[l]){
+                            cnt[n]++;
+                        }
+                    }
+                    place[n]=word[i];
+                    n++;
+                }
+            }
+        for (short i=0;i<n;i++){
+            cout<<place[i]<<": "<<cnt[i]<<endl;
         }
         
             in.close();

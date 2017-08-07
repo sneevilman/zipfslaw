@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=zipfs_law
+PROJECTNAME=zipfslaw
 
 # Active Configuration
 DEFAULTCONF=Debug

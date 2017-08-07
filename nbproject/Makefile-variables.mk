@@ -9,16 +9,16 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=zipfs_law
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/zipfs_law
+CND_ARTIFACT_NAME_Debug=zipfslaw
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/zipfslaw
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
 CND_PACKAGE_NAME_Debug=zipfslaw.tar
 CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/zipfslaw.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=zipfs_law
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/zipfs_law
+CND_ARTIFACT_NAME_Release=zipfslaw
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/zipfslaw
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
 CND_PACKAGE_NAME_Release=zipfslaw.tar
 CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/zipfslaw.tar
